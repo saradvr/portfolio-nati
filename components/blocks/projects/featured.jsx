@@ -55,7 +55,7 @@ export default function FeaturedProject({ content }, index) {
 						<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
 					</m.div>}
 					{(available === "false") && <div className={css.description}>
-						<p><strong>Note:</strong> This project is currently under construction and for the company confidentiality it can't be published yet.</p>
+						<p><strong>Note:</strong> This project is currently under construction and for the company confidentiality it can not be published yet.</p>
 					</div>}
 				</div>
 			</div>
