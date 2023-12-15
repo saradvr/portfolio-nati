@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 // Font Awesome packages
 const { library, config } = require('@fortawesome/fontawesome-svg-core')
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fas } from '@fortawesome/pro-solid-svg-icons'
+import { faBaby, fas } from '@fortawesome/pro-solid-svg-icons'
 import { fat } from '@fortawesome/pro-thin-svg-icons'
 import { fal } from '@fortawesome/pro-light-svg-icons'
 import { fad } from '@fortawesome/pro-duotone-svg-icons'
@@ -35,7 +35,7 @@ export default function Icon({ icon }) {
 
 	const [ iconType, iconKey ] = icon
 
-	const [ stateIconKey, setIconKey ] = useState('circle-notch')
+	const [ stateIconKey, setIconKey ] = useState('spinner')
 
 	useEffect( () => setIconKey( iconKey ), [ iconKey ] )
 

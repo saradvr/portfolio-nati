@@ -135,6 +135,9 @@ export default function Navbar() {
 			<ul className={css.menu}>
 				<li className={css.menuHeader}>
 					<Link className={css.logo} href="/"  >
+						<img src='/img/natalia-logo.png' style={{width:'auto', height:'50px'}} />
+					</Link>
+					<Link className={css.logo} href="/"  >
 						{settings.name}
 					</Link>
 					<button onClick={toggleMenu} className={css.mobileToggle} data-open={menuState}>

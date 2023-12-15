@@ -1,15 +1,14 @@
 {
-	"name": "Andrew Nelson",
+	"name": "Natalia Avilán",
 	"logo": "",
 	
 	"username": {
-		"github": "atlamors",
-		"medium": "@--andrewnelson"
+		"github": "saradvr"
 	},
 
 	"portfolio": { 
-		"forkthis": "Steal this theme! Its open-source 🥰",
-		"repo_html": "https://www.github.com/atlamors/portfolio",
-		"repo_api": "https://api.github.com/repos/atlamors/portfolio"
+		"forkthis": "This is my portfolio",
+		"repo_html": "https://github.com/saradvr/portfolio-nati",
+		"repo_api": "https://api.github.com/repos/saradvr/portfolio-nati"
 	}
 }

@@ -12,12 +12,20 @@ export default function SetTheme() {
 	const [ route, wasRoute ] = useState()
 	const [ theme, setTheme ] = useState()
 
-	const toggleTheme = () => {
+	const toggleThemeOriginal = () => {
 		if ( theme == 'light') {
 			setTheme('dark')
 		} else if ( theme == 'dark' ) {
 			setTheme('unicorn')
 		} else if ( theme == 'unicorn' )  {
+			setTheme('light')
+		}
+	}
+
+	const toggleTheme = () => {
+		if ( theme == 'light') {
+			setTheme('dark')
+		} else if ( theme == 'dark' ) {
 			setTheme('light')
 		}
 	}

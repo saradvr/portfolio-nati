@@ -64,7 +64,7 @@ h2 {
 }
 
 h3 {
-	font-size: var(--font-m);
+	font-size: var(--font-l);
 	font-family: var(--font-sans);
 	color: var(--primary);
 	font-weight: 600;
@@ -96,7 +96,7 @@ p {
 	&.subtitle {
 		font-family: var(--font-accent);
 		font-size: var(--font-r-s);
-		font-weight: 600;
+		font-weight: 300;
 		letter-spacing: 0;
 	}
 }

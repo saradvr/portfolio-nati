@@ -64,12 +64,12 @@ export default function Hero() {
 					</p>					
 				</section>
 				<section>
-					<button	className={`button ${button.primary}`}
-							onClick={ () => window.location = 'mailto:hello@andrewnelson.net' } >
+					<button	className={`button ${button.primary} leaveSite`}
+							onClick={ () => window.open("https://api.whatsapp.com/send?phone=573219468957&text=Hi!%20I%20saw%20your%20portfolio%20and%20I%20would%20like%20to%20chat%20with%20you%20about...", "_blank") } >
 						{content.buttons.primary.title}
 					</button>
 					<button className={`button ${button.secondary} leaveSite`}
-							onClick={ ()=> window.open("https://www.linkedin.com/in/--andrewnelson/", "_blank") } >
+							onClick={ ()=> window.open("https://www.linkedin.com/in/nataliaavilanc/", "_blank") } >
 						{content.buttons.secondary.title}
 					</button>
 				</section>

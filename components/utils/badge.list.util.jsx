@@ -9,6 +9,7 @@ import Icon from '../utils/icon.util.jsx'
 * scss reference for utils should probably be pulled in from the first component under the section
 */
 import badges from '../../styles/blocks/badges.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 export default function Badges({ list, block, color, fullContainer }) {
@@ -63,14 +64,14 @@ export default function Badges({ list, block, color, fullContainer }) {
 				whileHover="hover"
 		>
 		{
-		list.map( ({ key, name, type }) => {
+		list.map( ({ key, name, type, type2 }) => {
 			return ( 
 				<m.li 
 					key={name} 
 					className={`${badges.item} ${key}`}
 					//Animations
 					variants={item} >
-					<IconModule iconKey={key} iconType={type} color={color}/>
+					<IconModule iconKey={key} iconType={type} color={color} type2={type2}/>
 					<span className={badges.title}>{name}</span>
 				</m.li> 
 				)
@@ -80,7 +81,7 @@ export default function Badges({ list, block, color, fullContainer }) {
 	)
 }
 
-function IconModule({ iconKey, iconType, color }) {
+function IconModule({ iconKey, iconType, color, type2 }) {
 	let colored = 'colored'
 	if (color === false) { colored = '' }
 
@@ -92,6 +93,8 @@ function IconModule({ iconKey, iconType, color }) {
 			return ( <Icon icon={[ iconType, iconKey ]} /> )
 		case 'devicon':
 			return ( <i className={`devicon-${iconKey}-plain ${colored}`} /> )
+		case 'fa':
+			return <FontAwesomeIcon icon={`fa-${type2} fa-${iconKey}`} style={{color: color,}} />
 		default:
 			return ( '' )
 	}

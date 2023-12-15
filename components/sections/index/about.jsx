@@ -26,33 +26,44 @@ import about from '../../../styles/sections/index/about.module.scss';
 export default function About() {
 	return (
 		<Section classProp={about.section}>	
-			<Container spacing={['verticalXXXLrg']}>
+			<Container spacing={['verticalXLrg']}>
 				<SectionTitle
 					title="About Me"
-					preTitle="Synopsis"
-					subTitle="With a diverse skill set that includes UX design, UI design, full stack development, operational architecture, systems design, photography, and branding, I am a well-rounded digital professional."
+					//preTitle="Synopsis"
+					subTitle="My goal is to go beyond the creation of simple interfaces; I specialize in crafting captivating and efficient digital experiences through research, strategy, and design. My ability to understand user needs is reflected in the creation of web and mobile interfaces that stand out and captivate."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
-						<img src="/img/family-photo.jpg" alt="Nelson family photo"/>
+						<img src="/img/nati.jpeg" alt="Natalia's photo"/>
 						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
 					</div>
 					<div className={about.copy} >
-						<CopyBlock 
+						{/* <CopyBlock 
 							title="Softskills that pay the bills"
 							containerClass={about.container}
 							iconClass={about.icon}
 							icon={[ 'fat', 'ear-listen' ]}
 							copy="In addition to my design and technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a business owner / managing partner, husband, and father of two. Outside of work, I enjoy staying active through sports such as hockey and snowboarding. I am confident in my ability to bring passion and value to any project."
+						/> */}
+						<BadgesBlock 
+							title="Strategic Soft Skills" 
+							containerClass={about.container}
+							list={methodsSoft} 
+							fullContainer="fullContainer"
+							block="methodsSoft" 
+							icon="fingerprint"
+							copy="My soft skills have been a game-changer. I'm all about keeping communication genuine, striving for collaborative environments, and adapting quickly when change and challenges come. These skills aren't just about me – they're about keeping the teams I've rolled with, on a path of continuous growth and success."
+							//invertedColor="invertedColor"
+							headerIcon={`${about.icon}`}
 						/>
 						<BadgesBlock 
-							title="Reasearch and planning" 
+							title="Leadership and Management" 
 							containerClass={about.container}
 							list={methods} 
 							fullContainer="fullContainer"
-							block="methods" 
+							block="methodsH" 
 							icon="fingerprint"
-							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."
+							copy="This journey has been all about boosting teams and projects – from growing strong connections in cross-functional teams to steering design projects with purpose. What I like the most: Turning ideas into reality and celebrating each win, blending creativity with strategic direction."
 							//invertedColor="invertedColor"
 							headerIcon={`${about.icon}`}
 						/>
@@ -63,11 +74,20 @@ export default function About() {
 	)
 }
 
+const methodsSoft 	= [
+	{ key: 'planet-moon', 		name: 'Effective Communication', 		type: 'fad' },
+	{ key: 'qrcode', 			name: 'Collaborative', 					type: 'fad' },
+	{ key: 'window', 			name: 'Adaptability', 					type: 'fad' },
+	{ key: 'cubes', 			name: 'Critical Thinking', 				type: 'far' },
+	{ key: 'layer-plus', 		name: 'Creativity', 					type: 'fad' },
+	{ key: 'solar-system', 		name: 'Time Management', 				type: 'fad' },
+	{ key: 'solar-system', 		name: 'Problem Solving', 				type: 'fad' },
+]
 const methods 	= [
-	{ key: 'planet-moon', 		name: 'User Research', 		type: 'fad' },
-	{ key: 'qrcode', 			name: 'Digital Strategy', 	type: 'fad' },
-	{ key: 'window', 			name: 'Design Systems', 	type: 'fad' },
-	{ key: 'cubes', 			name: 'Product Strategy', 	type: 'far' },
-	{ key: 'layer-plus', 		name: 'Brand Strategy', 	type: 'fad' },
-	{ key: 'solar-system', 		name: 'Operations', 		type: 'fad' },
+	{ key: 'planet-moon', 		name: 'Leadership', 			type: 'fad' },
+	{ key: 'qrcode', 			name: 'Team Management', 		type: 'fad' },
+	{ key: 'window', 			name: 'Strategic Planning', 	type: 'fad' },
+	{ key: 'cubes', 			name: 'Agile Methodologies', 	type: 'far' },
+	{ key: 'layer-plus', 		name: 'Project Management', 	type: 'fad' },
+	// { key: 'solar-system', 		name: 'Operations', 			type: 'fad' },
 ]
