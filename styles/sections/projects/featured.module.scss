@@ -14,6 +14,20 @@
 	background-color: var(--background-dim2);
     border: 1px solid var(--primary-dark);
 
+	.viewProject {
+		display: flex;
+	}
+
+	.viewProject:hover {
+		cursor: pointer;
+		svg {
+			transform: scale(1.5);
+			transform: translateX(20px);
+			@include transition;
+			color: var(--neon-1-1);
+		}
+	}
+
 	.viewProject svg {
 		@include transition;
 	}
@@ -96,28 +110,55 @@
 		z-index: 2;
 	}
 
-	img {
-		display: none;
+	
+}
+
+.achievements {
+	ul {
+		padding: 10px;
 	}
+	li::before {
+		content: '\2713  ';
+		color: green;
+	}
+	li {
+		margin-bottom: 10px;
+	}
+	  
 }
 
 .imageContainer {
-	z-index: 3;
-	position: relative;
-	display: block;
-	width: 50%;
+	// z-index: 3;
+	// position: relative;
+	// display: block;
+	// width: 50%;
+	display: flex;
+	width: 40%;
 	border-radius: 1rem;
 	flex-grow: 1;
 	flex-shrink: 0;
+    justify-content: space-around;
+	padding: 20px;
+
+	img {
+		width: 100%;
+		height: fit-content;
+		align-self: center;
+	}
+
+	> span {
+		height: 90%;
+		width: auto;
+	}
 
 	.imageAnimationContainer {
 		position: absolute;
-		overflow: hidden;
+		// overflow: hidden;
 		border-radius: 2rem;
-		height: calc(100% - 6rem);
+		height: 90%;
 		width: calc(100% + 9rem);
 		right: 0;
-		bottom: 0;
+		top: 5px;
 
 		> div > div {
 
@@ -279,6 +320,12 @@
 			.imageContainer {
 				height: 300px;
 				width: 100%;
+				padding: 10px;
+				img {
+					height: 100%;
+					width: fit-content;
+					align-self: center;
+				}
 			}
 
 			.imageAnimationContainer {
@@ -286,10 +333,10 @@
 				width: 100%;
 				display: flex;
 				justify-content: center;
-		
+				
 				> div > div {
 					> span {
-						margin: 0 auto;
+						margin-left: 30px !important;
 						img {
 							width: calc(556px / 2) !important;
 							

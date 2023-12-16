@@ -12,7 +12,7 @@ import content 		from '../../../content/projects/featured.json'
 
 export default function FeaturedProject({ content }, index) {
 
-	const { logo, project, url, repo, available, descriptionTitle,description, stack, imageOptions, images } = content
+	const { logo, project, url, repo, available, descriptionTitle,description, stack, imageOptions, images, achievements } = content
 
 	const controls = useAnimation();
 	const { ref, inView  } = useInView({
@@ -23,7 +23,7 @@ export default function FeaturedProject({ content }, index) {
 	useEffect( () => {
 		if ( inView ) {	controls.start("visible") }
 		if ( !inView ) { controls.start("hidden") }
-		console.log("LOGO", logo)
+		console.log("URL", url)
 	}, [ controls, inView ] )
 
 	return (
@@ -40,7 +40,8 @@ export default function FeaturedProject({ content }, index) {
 			<div className={css.details}>
 				<div className={css.projectHeader}>
 					<div>
-						<Image src={logo} alt="Project logo" width={50} height={50} />
+						{/* <Image src={logo} alt="Project logo" width={50} height={50} /> */}
+						<img src={logo} alt="Project logo" style={{width: "auto", height:"50px"}} />
 					</div>
 					<div className={css.header}>
 						<h3 className="highlight">{project}</h3>
@@ -48,12 +49,26 @@ export default function FeaturedProject({ content }, index) {
 					<div className={css.description}>
 						<p><strong>{descriptionTitle}</strong> {description}</p>
 					</div>
+					<div className={css.achievements}>
+						<ul>
+							{achievements.map((el, i) => <li key={`${i}-key`}>{el}</li>)}
+						</ul>
+					</div>
 					<div className={css.stackContainer}>
 						<Badges list={stack} block="stack" fullContainer={false} color={false} />
 					</div>
-					{(available === "true") && <m.div variants={''} className={css.viewProject}>
-						<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
-					</m.div>}
+					{(available === "true" && url.live && 
+						<a href={url.live} className={css.viewProject} target="_blank" rel="noreferrer">
+							<p style={{marginRight: "10px"}}>Live project</p>
+							<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
+						</a>
+					)}
+					{(available === "true" && url.behance && 
+						<a href={url.behance} className={css.viewProject} target="_blank" rel="noreferrer">
+							<p style={{marginRight: "10px"}}>UX/UI Project Overview</p>
+							<Icon icon={[ 'fad', 'arrow-right-to-bracket' ]} />
+						</a>
+					)}
 					{(available === "false") && <div className={css.description}>
 						<p><strong>Note:</strong> This project is currently under construction and for the company confidentiality it can not be published yet.</p>
 					</div>}
@@ -61,6 +76,11 @@ export default function FeaturedProject({ content }, index) {
 			</div>
 
 			<div className={css.imageContainer}>
+				{/* <Image src={images[0].url} alt="x" height={images[0].h} width={images[0].w} /> */}
+				<img src={images[0].url} alt="x" />
+			</div>
+
+			{/* <div className={css.imageContainer}>
 				<span className={`${css.imageAnimationContainer}`}>
 					{ images.map( ({key, url, hover, h, w }, index) => {
 						hover = ( hover === 'left' ) ? hoverLeft : hoverRight
@@ -73,7 +93,7 @@ export default function FeaturedProject({ content }, index) {
 						)}
 					) }
 				</span>
-			</div>
+			</div> */}
 		</m.section>
 	)
 }

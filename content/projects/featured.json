@@ -1,6 +1,6 @@
 [
 	{
-		"logo": "/img/Korwatch-logo.png",
+		"logo": "/img/korwatch/Korwatch-logo.png",
 		"project": "Korwatch",
 		"url": "",
 		"available": "false",
@@ -9,38 +9,70 @@
 		"imageOptions": [
 		],
 		"images": [
-			{ "key": "mock-stack",	"hover": "right", 	"h": "585", "w": "290", "url": "/img/korwatch/KorwatchMockup.png" },
-			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/01.png" }
+			{ "key": "mock-stack",	"hover": "right", 	"h": "360.86", "w": "270", "url": "/img/korwatch/mockupkorwatch.png" }
 		],
 		"stack": [
 			{ "key": "figma", 		"name": "Figma", 			"type": "devicon" },
 			{ "key": "angular", 	"name": "Ant Design", 		"type": "fa", "type2": "brands" }
+		],
+		"achievements": [
+			"Lead the UX/UI team strategy ensuring a cohesive and user-centric approach, complying with usability, accesibility and UX standards.",
+			"⁠Implemented agile methods, specifically SCRUM, to meet and optimize the expected standards in the development of the platform.",
+			"⁠Established effective communication with all involved departments in the Korwatch project, fostering collaboration and ensuring a unified vision."
 		]
 	},
 	{
-		"logo": "/img/Korwatch-logo.png",
-		"project": "andrewnelson.net",
-		"url": "https://github.com/atlamors/portfolio",
+		"logo": "/img/dropper/puntoLogo.webp",
+		"project": "Dropper",
+		"url": {
+			"live": "https://dev.mydropper.vercel.app/",
+			"behance": ""
+		},
 		"repo": "Public",
 		"available": "true",
-		"descriptionTitle": "An open source portfolio",
-		"description": "built on Next.js and React. A fast and agile MERN stack single page application.",
+		"descriptionTitle": "",
+		"description": "This e-commerce platform was designed to provide a buying and selling experience for entrepreneurs and users interested in local brands. This project encapsulates the essence of a modern, user-centric e-commerce platform, promoting innovation and excellence in the world of online commerce.",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/dropper/MOCKUPD.png" }
 		],
 		"stack": [
-			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
-			{ "key": "react", 		"name": "React", 		"type": "devicon" },
-			{ "key": "nodejs", 		"name": "Node.js", 		"type": "devicon" },
-			{ "key": "mongodb", 	"name": "MongoDB", 		"type": "devicon" },
-			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
-			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
-			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
-			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
-			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" }
+			{ "key": "figma", 		"name": "Figma", 			"type": "devicon" },
+			{ "key": "react", 	"name": "Material UI", 		"type": "fa", "type2": "brands" }
+		],
+		"achievements": [
+			"Integrate a comprehensive design system, enhancing consistency and efficiency in the design process.",
+			"⁠Managed the entire design process, from initial research to the development of medium and high-fidelity wireframes.",
+			"⁠Maintained close collaboration with the frontend developer throughout the process, ensuring a seamless transition from design to implementation."
+		]
+	},
+	{
+		"logo": "/img/dropper/puntoLogo.webp",
+		"project": "Dropper",
+		"url": {
+			"live": "https://dev.mydropper.vercel.app/",
+			"behance": "d"
+		},
+		"repo": "Public",
+		"available": "true",
+		"descriptionTitle": "",
+		"description": "This e-commerce platform was designed to provide a buying and selling experience for entrepreneurs and users interested in local brands. This project encapsulates the essence of a modern, user-centric e-commerce platform, promoting innovation and excellence in the world of online commerce.",
+		"imageOptions": [
+			{ "key": "size", 		"value": "large" }
+		],
+		"images": [
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/dropper/MOCKUPD.png" }
+		],
+		"stack": [
+			{ "key": "figma", 		"name": "Figma", 			"type": "devicon" },
+			{ "key": "react", 	"name": "Material UI", 		"type": "fa", "type2": "brands" }
+		],
+		"achievements": [
+			"Integrate a comprehensive design system, enhancing consistency and efficiency in the design process.",
+			"⁠Managed the entire design process, from initial research to the development of medium and high-fidelity wireframes.",
+			"⁠Maintained close collaboration with the frontend developer throughout the process, ensuring a seamless transition from design to implementation."
 		]
 	}
 ]

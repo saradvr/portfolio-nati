@@ -51,7 +51,7 @@ export default function About() {
 							list={methodsSoft} 
 							fullContainer="fullContainer"
 							block="methodsSoft" 
-							icon="fingerprint"
+							icon="puzzle"
 							copy="My soft skills have been a game-changer. I'm all about keeping communication genuine, striving for collaborative environments, and adapting quickly when change and challenges come. These skills aren't just about me – they're about keeping the teams I've rolled with, on a path of continuous growth and success."
 							//invertedColor="invertedColor"
 							headerIcon={`${about.icon}`}
@@ -62,7 +62,7 @@ export default function About() {
 							list={methods} 
 							fullContainer="fullContainer"
 							block="methodsH" 
-							icon="fingerprint"
+							icon="people-group"
 							copy="This journey has been all about boosting teams and projects – from growing strong connections in cross-functional teams to steering design projects with purpose. What I like the most: Turning ideas into reality and celebrating each win, blending creativity with strategic direction."
 							//invertedColor="invertedColor"
 							headerIcon={`${about.icon}`}
@@ -75,19 +75,19 @@ export default function About() {
 }
 
 const methodsSoft 	= [
-	{ key: 'planet-moon', 		name: 'Effective Communication', 		type: 'fad' },
-	{ key: 'qrcode', 			name: 'Collaborative', 					type: 'fad' },
-	{ key: 'window', 			name: 'Adaptability', 					type: 'fad' },
-	{ key: 'cubes', 			name: 'Critical Thinking', 				type: 'far' },
-	{ key: 'layer-plus', 		name: 'Creativity', 					type: 'fad' },
-	{ key: 'solar-system', 		name: 'Time Management', 				type: 'fad' },
-	{ key: 'solar-system', 		name: 'Problem Solving', 				type: 'fad' },
+	{ key: 'comment', 		name: 'Effective Communication', 		type: 'fad' },
+	{ key: 'people-group', 			name: 'Collaborative', 					type: 'fad' },
+	{ key: 'user-gear', 			name: 'Adaptability', 					type: 'fad' },
+	{ key: 'lightbulb', 			name: 'Critical Thinking', 				type: 'far' },
+	{ key: 'pen-to-square', 		name: 'Creativity', 					type: 'fad' },
+	{ key: 'clock-rotate-left', 		name: 'Time Management', 				type: 'fad' },
+	{ key: 'hand-point-up', 		name: 'Problem Solving', 				type: 'fad' },
 ]
 const methods 	= [
-	{ key: 'planet-moon', 		name: 'Leadership', 			type: 'fad' },
-	{ key: 'qrcode', 			name: 'Team Management', 		type: 'fad' },
-	{ key: 'window', 			name: 'Strategic Planning', 	type: 'fad' },
-	{ key: 'cubes', 			name: 'Agile Methodologies', 	type: 'far' },
+	{ key: 'person-chalkboard', 		name: 'Leadership', 			type: 'fad' },
+	{ key: 'users-viewfinder', 			name: 'Team Management', 		type: 'fad' },
+	{ key: 'brain', 			name: 'Strategic Planning', 	type: 'fad' },
+	{ key: 'arrows-rotate', 			name: 'Agile Methodologies', 	type: 'far' },
 	{ key: 'layer-plus', 		name: 'Project Management', 	type: 'fad' },
 	// { key: 'solar-system', 		name: 'Operations', 			type: 'fad' },
 ]
