@@ -28,6 +28,7 @@ export default function About() {
 		<Section classProp={about.section}>	
 			<Container spacing={['verticalXLrg']}>
 				<SectionTitle
+					id="aboutMe"
 					title="About Me"
 					//preTitle="Synopsis"
 					subTitle="My goal is to go beyond the creation of simple interfaces; I specialize in crafting captivating and efficient digital experiences through research, strategy, and design. My ability to understand user needs is reflected in the creation of web and mobile interfaces that stand out and captivate."

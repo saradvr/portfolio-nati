@@ -168,6 +168,10 @@
 	
 }
 
+.logo:hover {
+	cursor: pointer;
+}
+
 @include media($max: $mobile) {
 	.container {
 		padding-left: 1rem;

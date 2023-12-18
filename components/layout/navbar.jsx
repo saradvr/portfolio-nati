@@ -134,10 +134,10 @@ export default function Navbar() {
 		<nav id="Navbar" className={css.container}>
 			<ul className={css.menu}>
 				<li className={css.menuHeader}>
-					<Link className={css.logo} href="/"  >
-						<img src='/img/natalia-logo.png' style={{width:'auto', height:'50px'}} />
+					<Link className={css.logo} href="/">
+						<img className={css.logo} src='/img/natalia-logo.png' style={{width:'auto', height:'50px'}} />
 					</Link>
-					<Link className={css.logo} href="/"  >
+					<Link className={css.logo} href="/">
 						{settings.name}
 					</Link>
 					<button onClick={toggleMenu} className={css.mobileToggle} data-open={menuState}>
@@ -153,7 +153,7 @@ export default function Navbar() {
 						content.map( ({ url, title }, index) => {
 							return (
 								<li key={index}>
-									<Link href={url}>{title}</Link>
+									<a href={url}>{title}</a>
 								</li>
 							)
 						})	

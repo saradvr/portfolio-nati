@@ -28,6 +28,7 @@ export default function Technical() {
 		<Section classProp={`${about.section} borderBottom`}>	
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
+					id="technical-hardskills"
 					title="Technical"
 					preTitle="Hardskills"
 					subTitle="As a creative technologist, I craft intuitive digital experiences using a diverse set of tools and languages."
