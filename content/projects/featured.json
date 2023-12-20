@@ -1,5 +1,30 @@
 [
 	{
+		"logo": "/img/talkhub/TalkHublogo.png",
+		"project": "Talkhub",
+		"url": {
+			"live": "",
+			"behance": ""
+		},
+		"available": "true",
+		"descriptionTitle": "",
+		"description": "This advanced monitoring platform excels in overseeing IoT devices, sensors, and GPS tools, offering not only observation but also real-time intervention, analytics, and proactive responses to provide instant and actionable insights.",
+		"imageOptions": [
+		],
+		"images": [
+			{ "key": "mock-stack",	"hover": "right", 	"h": "360.86", "w": "270", "url": "/img/korwatch/mockupkorwatch.png" }
+		],
+		"stack": [
+			{ "key": "figma", 		"name": "Figma", 			"type": "devicon" },
+			{ "key": "react", 	"name": "Material UI", 		"type": "fa", "type2": "brands" }
+		],
+		"achievements": [
+			"Lead the UX/UI team strategy ensuring a cohesive and user-centric approach, complying with usability, accesibility and UX standards.",
+			"⁠Implemented agile methods, specifically SCRUM, to meet and optimize the expected standards in the development of the platform.",
+			"⁠Established effective communication with all involved departments in the Korwatch project, fostering collaboration and ensuring a unified vision."
+		]
+	},
+	{
 		"logo": "/img/korwatch/Korwatch-logo.png",
 		"project": "Korwatch",
 		"url": "",
