@@ -49,7 +49,7 @@
 		]
 	},
 	{
-		"logo": "/img/dropper/puntoLogo.webp",
+		"logo": "/img/transagil/Transagillogo.png",
 		"project": "Transágil",
 		"url": {
 			"live": "",
@@ -63,7 +63,7 @@
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/dropper/MOCKUPD.png" }
+			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/transagil/mockuptrans.png" }
 		],
 		"stack": [
 			{ "key": "figma", 		"name": "Figma", 			"type": "devicon" },
