@@ -58,7 +58,7 @@
 		"repo": "Public",
 		"available": "true",
 		"descriptionTitle": "",
-		"description": "This e-commerce platform was designed to provide a buying and selling experience for entrepreneurs and users interested in local brands. This project encapsulates the essence of a modern, user-centric e-commerce platform, promoting innovation and excellence in the world of online commerce.",
+		"description": "As a Freelance UX Designer on the optimization project for Transagil, I led the comprehensive redesign of the loan application section. Faced with the complexity and low usability of the existing form, my focus was on simplifying and streamlining the process. Through user interviews, data analysis, and benchmarking, I developed wireframes that prioritized clarity and efficiency and enhanced the user experience.",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
 		],
@@ -70,9 +70,9 @@
 			{ "key": "react", 	"name": "Material UI", 		"type": "fa", "type2": "brands" }
 		],
 		"achievements": [
-			"Integrate a comprehensive design system, enhancing consistency and efficiency in the design process.",
-			"⁠Managed the entire design process, from initial research to the development of medium and high-fidelity wireframes.",
-			"⁠Maintained close collaboration with the frontend developer throughout the process, ensuring a seamless transition from design to implementation."
+			"Conducted user interviews to identify pain points and specific user needs, and performed benchmarking of interfaces from other financial platforms to inform design decisions.",
+			"Created detailed wireframes that prioritized clarity and efficiency based on insights gathered from user research.",
+			"Engaged in collaborative discussions with key stakeholders to align design decisions with business objectives."
 		]
 	}
 ]
