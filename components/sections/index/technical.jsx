@@ -31,13 +31,13 @@ export default function Technical() {
 					id="technical-hardskills"
 					title="Technical"
 					preTitle="Hardskills"
-					subTitle="As a creative technologist, I craft intuitive digital experiences using a diverse set of tools and languages."
+					// subTitle="As a creative technologist, I craft intuitive digital experiences using a diverse set of tools and languages."
 				/>
 				<section className={`${about.content} ${about.container} ${about.technical}`}>
 					<div className={`${about.copy} ${about.technical}`}>
 						<CopyBlock 
 							title="User Research"
-							icon={[ 'fat', 'chart-network' ]}
+							icon={[ 'fat', 'magnifying-glass' ]}
 							copy="My knowledge in user research extends to planning and conducting user interviews, along with creating and analyzing surveys or interviews to glean valuable insights into user behaviors and preferences. This foundational understanding guides the entire design process, ensuring that solutions align closely with the actual needs and expectations of the user base."
 							iconClass={about.icon}
 							containerClass={`${about.container} ${about.technical}`}
@@ -51,21 +51,21 @@ export default function Technical() {
 						/>
 						<CopyBlock 
 							title="UX Writing"
-							icon={[ 'fat', 'chart-network' ]}
+							icon={[ 'fat', 'file-signature' ]}
 							copy="Writing for UX design is a key aspect of my skill set. I focus on creating clear, concise, and engaging content that guides users through their journey. From microcopy to user interface text, I pay attention to language and tone to enhance the overall user experience and facilitate effective communication."
 							iconClass={about.icon}
 							containerClass={`${about.container} ${about.technical}`}
 						/>
 						<CopyBlock 
 							title="Wireframing"
-							icon={[ 'fat', 'chart-network' ]}
+							icon={[ 'fat', 'laptop' ]}
 							copy="My wireframes are iteratively refined based on feedback and usability testing to achieve optimal user interaction. My prototyping capabilities extend to both low and high fidelity, using tools like Figma to build interactive prototypes that facilitate effective design communication."
 							iconClass={about.icon}
 							containerClass={`${about.container} ${about.technical}`}
 						/>
 						<CopyBlock 
 							title="Userflows"
-							icon={[ 'fat', 'chart-network' ]}
+							icon={[ 'fat', 'network-wired' ]}
 							copy="My approach to user flows involves the creation of comprehensive diagrams that visually represent the steps a user takes to accomplish specific tasks or goals. By mapping out these interactions, I can optimize the overall user experience, making it more efficient and enjoyable."
 							iconClass={about.icon}
 							containerClass={`${about.container} ${about.technical}`}
@@ -114,14 +114,14 @@ export default function Technical() {
 }
 
 const software = [
-	{ key: 'illustrator', 	name: 'Illustrator', 		type: 'devicon' },
-	{ key: 'figma', 		name: 'Figma', 				type: 'devicon' },
-	{ key: 'workshop', 		name: 'Optimal Workshop', 				type: 'devicon' },
-	{ key: 'whimsical', 		name: 'Whimsical', 				type: 'devicon' },
-	{ key: 'miro', 		name: 'Miro', 				type: 'devicon' },
-	{ key: 'wave', 		name: 'WAVE', 				type: 'devicon' },
-	{ key: 'color', 		name: 'Color Contrast Checker', 				type: 'devicon' },
-	{ key: 'jira', 		name: 'Jira', 				type: 'devicon' },
+	{ key: 'illustrator', 				name: 'Illustrator', 			type: 'devicon' },
+	{ key: 'figma', 					name: 'Figma', 					type: 'devicon' },
+	{ key: 'workshop', 					name: 'Optimal Workshop', 		type: 'devicon' },
+	{ key: 'whimsical', 				name: 'Whimsical', 				type: 'devicon' },
+	{ key: 'miro', 						name: 'Miro', 					type: 'devicon' },
+	{ key: '/img/icons/wave.jpeg', 		name: 'WAVE', 					type: 'image' },
+	{ key: 'color', 					name: 'Color Contrast Checker', type: 'devicon' },
+	{ key: 'jira', 						name: 'Jira', 					type: 'devicon' },
 ]
 
 const softwareOriginal = [

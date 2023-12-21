@@ -72,6 +72,9 @@ export default function FeaturedProject({ content }, index) {
 					{(available === "false") && <div className={css.description}>
 						<p><strong>Note:</strong> This project is currently under construction and for the company confidentiality it can not be published yet.</p>
 					</div>}
+					{(available === "inProgress") && <div className={css.description}>
+						<p><strong>Note:</strong> This project is currently under construction.</p>
+					</div>}
 				</div>
 			</div>
 

@@ -6,22 +6,22 @@
 			"live": "",
 			"behance": ""
 		},
-		"available": "true",
+		"available": "inProgress",
 		"descriptionTitle": "",
-		"description": "This advanced monitoring platform excels in overseeing IoT devices, sensors, and GPS tools, offering not only observation but also real-time intervention, analytics, and proactive responses to provide instant and actionable insights.",
+		"description": "As a UX Designer, I was responsible for creating an application that goes beyond traditional language teaching. TalkHub represents an exciting educational paradigm where users not only acquire language skills but also benefit from a library of expressions and a translator for those who may not be fluent but wish to communicate in another language from anywhere in the world. Additionally, it features Talkbuddy, an AI that personalizes the user's learning journey based on their preferences and progress level.",
 		"imageOptions": [
 		],
 		"images": [
-			{ "key": "mock-stack",	"hover": "right", 	"h": "360.86", "w": "270", "url": "/img/korwatch/mockupkorwatch.png" }
+			{ "key": "mock-stack",	"hover": "right", 	"h": "360.86", "w": "270", "url": "/img/talkhub/mockuptalkhub.png" }
 		],
 		"stack": [
 			{ "key": "figma", 		"name": "Figma", 			"type": "devicon" },
 			{ "key": "react", 	"name": "Material UI", 		"type": "fa", "type2": "brands" }
 		],
 		"achievements": [
-			"Lead the UX/UI team strategy ensuring a cohesive and user-centric approach, complying with usability, accesibility and UX standards.",
-			"⁠Implemented agile methods, specifically SCRUM, to meet and optimize the expected standards in the development of the platform.",
-			"⁠Established effective communication with all involved departments in the Korwatch project, fostering collaboration and ensuring a unified vision."
+			"Spearheaded the UX design initiative for TalkHub, redefining language learning beyond conventional methods.",
+			"⁠Conducted comprehensive research, developed intricate information architecture, and crafted detailed wireframes.",
+			"⁠Innovatively integrated features including a library of expressions, a translator, and the Talkbuddy AI for highly personalized learning journeys."
 		]
 	},
 	{

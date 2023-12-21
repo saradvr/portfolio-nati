@@ -10,6 +10,7 @@ import Icon from '../utils/icon.util.jsx'
 */
 import badges from '../../styles/blocks/badges.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image.js';
 
 
 export default function Badges({ list, block, color, fullContainer }) {
@@ -71,7 +72,7 @@ export default function Badges({ list, block, color, fullContainer }) {
 					className={`${badges.item} ${key}`}
 					//Animations
 					variants={item} >
-					<IconModule iconKey={key} iconType={type} color={color} type2={type2}/>
+					{type !== "image" ? <IconModule iconKey={key} iconType={type} color={color} type2={type2}/> : <img src={key} style={{marginRight: "5px", width: "12px", height: "12px"}}/>}
 					<span className={badges.title}>{name}</span>
 				</m.li> 
 				)
